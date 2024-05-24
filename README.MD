@@ -2,7 +2,7 @@
 ### Python deps:
  - pip install fastapi uvicorn pillow torch ftfy regex tqdm
 
-### Launch api:
+### Launch server:
  - uvicorn api:app --reload
 
 ### Launch client:

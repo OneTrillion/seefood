@@ -1,6 +1,9 @@
 # SeeFood *- The Shazam for food*
+
+<a href="https://ibb.co/5LRsGfB"><img src="https://i.ibb.co/5LRsGfB/hotdog.jpg" alt="hotdog" border="0"></a>
+
 ### Python deps:
- - pip install fastapi uvicorn pillow torch ftfy regex tqdm
+ - fastapi uvicorn pillow pytorch torchvision ftfy regex tqdm
 
 ### Launch server:
  - uvicorn api:app --reload

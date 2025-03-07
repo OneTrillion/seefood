@@ -3,7 +3,6 @@ import React, { useState, useRef } from 'react';
 import {CameraView, useCameraPermissions } from 'expo-camera';
 import axios from 'axios';
 
-
 export default function Index() {
   const [permission, requestPermission] = useCameraPermissions();
   const [isHotdog, setIsHotdog] = useState<boolean | null>(null);
@@ -44,7 +43,7 @@ export default function Index() {
     });
 
     try {
-      const response = await axios.post('http://192.168.0.18:8000/clip', formData, {
+      const response = await axios.post('http://10.31.255.240:8000/clip', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -57,7 +56,6 @@ export default function Index() {
       }
     } catch (error) {
       console.error(error);
-      console.error(error.stack);
     }
   };
 

@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 from PIL import Image
 import torch
 import clip
+import uvicorn
 
 app = FastAPI()
 
@@ -48,6 +49,5 @@ async def get_clip_features(file: UploadFile = File(...)):
     return result
 
 if __name__ == "__main__":
-    import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
